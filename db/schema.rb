@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2020_08_17_063840) do
 
   create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -27,8 +28,18 @@ ActiveRecord::Schema.define(version: 2020_08_17_063840) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+
+ActiveRecord::Schema.define(version: 2020_08_13_095547) do
+
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+
+ActiveRecord::Schema.define(version: 2020_08_17_023358) do
+
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
+
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
